@@ -65,7 +65,7 @@ CUDA_VISIBLE_DEVICES=7 nohup python -u NeRFs/HeadNeRF/train/audio_exp_nerf.py --
 
 #### Eval
 
-> The command can also be written in a config file.
+> The hyperparameters can also be written in a config file.
 
 ```Plaintext
 CUDA_VISIBLE_DEVICES=0 nohup python -u NeRFs/HeadNeRF/test/eval_aud_exp_nerf.py --basedir=dataset/Obama/logs --datadir=dataset/Obama --expname=blend_highlight_torso --evalExpr_path=dataset/May/transforms_exp_train.json --save_path=output/cross_subject_blend/Obama0_May_Expr --aud_file=dataset/audio/aud_may.npy --num_work=1 --batch_size=1 --testskip=1 --near=0.5674083709716797 --far=1.1674083709716796 > output/render_V_Obama0_A_May.out &
