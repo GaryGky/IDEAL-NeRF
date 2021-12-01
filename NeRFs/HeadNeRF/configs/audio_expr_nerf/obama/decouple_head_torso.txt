@@ -1,0 +1,17 @@
+basedir=dataset/Obama/logs
+datadir=dataset/Obama
+expname=decouple
+vis_path=dataset/Obama/running/decouple
+N_sample=64
+N_importance=128
+num_work=1
+batch_size=1
+lrate=3e-4
+N_iters=40
+near=0.6421624898910523
+far=1.2421624898910522
+testskip=15
+N_rand=2048
+aud_file=aud_obama.npy
+lc_weight=0.005
+use_highlight

@@ -1,0 +1,15 @@
+basedir=dataset/Obama3/logs
+datadir=dataset/Obama3
+expname=adnerf_baseline
+vis_path=dataset/Obama3/running/adnerf_baseline
+num_work=1
+batch_size=1
+N_rand=2048
+N_importance=128
+N_samples=64
+lrate=2e-4
+aud_file=aud_obama.npy
+near=0.6338776230812073
+far=1.2338776230812072
+testskip=79
+N_iters=40

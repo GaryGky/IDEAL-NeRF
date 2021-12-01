@@ -1,0 +1,3 @@
+# IDEAL-NeRF
+
+See README.pdf

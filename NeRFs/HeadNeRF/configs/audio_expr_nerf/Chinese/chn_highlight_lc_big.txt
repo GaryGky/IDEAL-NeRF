@@ -1,0 +1,17 @@
+basedir=dataset/Chinese/logs
+datadir=dataset/Chinese
+expname=chn_highlight_lc_big
+vis_path=dataset/Chinese/running/chn_highlight_lc_big
+N_sample=64
+N_importance=128
+num_work=1
+batch_size=1
+lrate=3e-4
+N_iters=40
+near=0.6020569682121277
+far=1.2020569682121276
+testskip=15
+N_rand=2048
+aud_file=aud_ch.npy
+lc_weight=0.005
+use_highlight

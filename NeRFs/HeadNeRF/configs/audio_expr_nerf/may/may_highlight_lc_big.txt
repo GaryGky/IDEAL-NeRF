@@ -1,0 +1,17 @@
+basedir=dataset/May/logs
+datadir=dataset/May
+expname=may_highlight_lc_big
+vis_path=dataset/May/running/may_highlight_lc_big
+N_sample=64
+N_importance=128
+num_work=1
+batch_size=1
+lrate=5e-4
+N_iters=40
+near=0.49851499795913695
+far=1.0985149979591369
+testskip=15
+N_rand=2048
+aud_file=aud_may.npy
+lc_weight=0.005
+use_highlight
