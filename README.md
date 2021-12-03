@@ -46,6 +46,7 @@ num_work=1
 batch_size=1
 lrate=3e-4
 N_iters=60
+# Copy near and far from dataset/${id}/HeadNeRF_config.txt
 near=0.5772005200386048
 far=1.1772005200386046
 testskip=104
@@ -53,8 +54,8 @@ N_rand=3072
 lc_weight=0.005
 mouth_rays=512
 torso_rays=0
-dim_expr=79
-dim_aud=29
+dim_expr=76
+dim_aud=64
 ```
 
 #### Train

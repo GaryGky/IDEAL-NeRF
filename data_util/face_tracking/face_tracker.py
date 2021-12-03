@@ -43,7 +43,7 @@ lms, img_paths = load_dir(os.path.join(id_dir, 'ori_imgs'), start_id, end_id)
 num_frames = lms.shape[0]
 h, w = args.img_h, args.img_w
 cxy = torch.tensor((w / 2.0, h / 2.0), dtype=torch.float).cuda()
-id_dim, exp_dim, tex_dim, point_num = 100, 79, 100, 34650
+id_dim, exp_dim, tex_dim, point_num = 100, 76, 100, 34650
 model_3dmm = Face_3DMM(os.path.join(dir_path, '3DMM'),
                        id_dim, exp_dim, tex_dim, point_num)
 
