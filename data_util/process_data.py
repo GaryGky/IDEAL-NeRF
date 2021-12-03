@@ -2,7 +2,8 @@
 import glob
 import json
 import logging
-import os, sys
+import os
+import sys
 from pathlib import Path
 
 import imageio
@@ -11,12 +12,10 @@ cur_path = os.path.abspath(os.path.dirname(__file__))
 root_path = f'{cur_path}/../'
 sys.path.append(root_path)
 
-from utils.landmark_utils import get_lms_features_np
 import cv2
 import face_alignment
 import numpy as np
 import torch
-from skimage import io
 from sklearn.neighbors import NearestNeighbors
 
 from face_parsing.test import evaluate
@@ -334,11 +333,12 @@ if __name__ == '__main__':
     pass
     # torch.set_default_tensor_type('torch.cuda.FloatTensor')
 
-    # extract_deep_speech()
-    # detect_lands()
-    # face_parse()
+    extract_deep_speech()
+    extract_images()
+    detect_lands()
+    face_parse()
     extract_bg_image()
-    # decouple_bg()
+    decouple_bg()
 
-    # estimate_head_pose()
-    # transform_write_config()
+    estimate_head_pose()
+    transform_write_config()
