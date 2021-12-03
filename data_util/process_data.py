@@ -331,12 +331,19 @@ if __name__ == '__main__':
     pass
     # torch.set_default_tensor_type('torch.cuda.FloatTensor')
 
-    # extract_deep_speech()
-    # extract_images()
+    # extract deepspeech feature
+    extract_deep_speech()
+    # extract frames
+    extract_images()
+    # detect landmarks
     detect_lands()
+    # parse facial parts
     face_parse()
+    # extract background images
     extract_bg_image()
+    # decouple background image
     decouple_bg()
-
+    # estimate head pose and camera parameters
     estimate_head_pose()
+    # save to config
     transform_write_config()
