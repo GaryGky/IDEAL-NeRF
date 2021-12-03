@@ -11,7 +11,7 @@ import torch.utils.model_zoo as modelzoo
 
 resnet18_url = 'https://download.pytorch.org/models/resnet18-5c106cde.pth'
 
-torch.set_default_tensor_type('torch.cuda.FloatTensor')
+# torch.set_default_tensor_type('torch.cuda.FloatTensor')
 
 
 def conv3x3(in_planes, out_planes, stride=1):

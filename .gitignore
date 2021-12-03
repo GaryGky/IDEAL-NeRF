@@ -6,3 +6,6 @@
 *.fatbin
 .idea
 .DS_Store
+dataset/**/*.mp4
+dataset/**/*.jpg
+dataset/**/*.lms

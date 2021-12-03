@@ -96,7 +96,7 @@ def extract_images():
         cv2.imwrite(os.path.join(ori_imgs_dir, str(frame_num) + '.jpg'), frame)
         frame_num = frame_num + 1
     cap.release()
-    exit()
+    # exit()
     print('--- Step1: End ---')
 
 
@@ -105,7 +105,7 @@ def detect_lands():
     print('--- Step 2: detect landmarks ---')
 
     def detect_lands():
-        fa = face_alignment.FaceAlignment(face_alignment.LandmarksType._2D, flip_input=False, device='cuda')
+        fa = face_alignment.FaceAlignment(face_alignment.LandmarksType._2D, flip_input=False, device='cpu')
         start = 0
 
         for image_path in os.listdir(ori_imgs_dir):
@@ -116,9 +116,7 @@ def detect_lands():
                     print(f'finish: {start} landmark detect!')
                 if len(preds) > 0:
                     lands = preds[0].reshape(-1, 2)[:, :2]
-                    # lf = get_lms_features_np(preds[0])
                     np.savetxt(os.path.join(ori_imgs_dir, image_path[:-3] + 'lms'), lands, '%f')
-                    # np.savetxt(os.path.join(ori_imgs_dir, image_path[:-3] + 'lf'), lf, '%f')
             start += 1
 
     detect_lands()
@@ -333,8 +331,8 @@ if __name__ == '__main__':
     pass
     # torch.set_default_tensor_type('torch.cuda.FloatTensor')
 
-    extract_deep_speech()
-    extract_images()
+    # extract_deep_speech()
+    # extract_images()
     detect_lands()
     face_parse()
     extract_bg_image()
